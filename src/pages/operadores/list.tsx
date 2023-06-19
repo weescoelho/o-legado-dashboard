@@ -89,7 +89,7 @@ export const OperatorList: React.FC<IResourceComponentsProps> = () => {
           return (
             <>
               <EditButton hideText recordItemId={row.id} />
-              <ShowButton hideText recordItemId={row.id} />
+              {/* <ShowButton hideText recordItemId={row.id} /> */}
             </>
           );
         },
