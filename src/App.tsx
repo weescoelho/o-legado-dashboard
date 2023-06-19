@@ -30,6 +30,12 @@ import { Router } from "./router";
 function App() {
   const { t, i18n } = useTranslation();
 
+  const i18nProvider = {
+    translate: (key: string, params: object) => t(key, params),
+    changeLocale: (lang: string) => i18n.changeLanguage(lang),
+    getLocale: () => i18n.language,
+  };
+
   return (
     <BrowserRouter>
       <RefineKbarProvider>
@@ -47,6 +53,7 @@ function App() {
               authProvider={authProvider}
               notificationProvider={notificationProvider}
               routerProvider={routerBindings}
+              i18nProvider={i18nProvider}
               resources={[
                 {
                   name: "operadores",

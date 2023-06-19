@@ -44,7 +44,7 @@ export function Router() {
           </Authenticated>
         }
       >
-        <Route index element={<NavigateToResource resource="blog_posts" />} />
+        <Route index element={<NavigateToResource resource="operadores" />} />
         <Route path="/operadores">
           <Route index element={<OperatorList />} />
           <Route path="create" element={<OperatorCreate />} />
@@ -78,12 +78,6 @@ export function Router() {
                   icon={<AppIcon />}
                 />
               }
-              formProps={{
-                defaultValues: {
-                  email: "demo@refine.dev",
-                  password: "demodemo",
-                },
-              }}
             />
           }
         />

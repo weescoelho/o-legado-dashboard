@@ -1,34 +1,34 @@
 {
   "pages": {
     "login": {
-      "title": "Sign in to your account",
-      "signin": "Sign in",
-      "signup": "Sign up",
+      "title": "",
+      "signin": "Entrar",
+      "signup": "Cadastrar",
       "divider": "or",
       "fields": {
         "email": "Email",
         "password": "Password"
       },
       "errors": {
-        "validEmail": "Invalid email address"
+        "validEmail": "Endereço de e-mail inválido"
       },
       "buttons": {
-        "submit": "Login",
-        "forgotPassword": "Forgot password?",
-        "noAccount": "Don’t have an account?",
-        "rememberMe": "Remember me"
+        "submit": "Entrar",
+        "forgotPassword": "Esqueceu a senha?",
+        "noAccount": "Não tem uma conta?",
+        "rememberMe": "Lembrar de mim"
       }
     },
     "forgotPassword": {
-      "title": "Forgot your password?",
+      "title": "Perdeu sua senha?",
       "fields": {
         "email": "Email"
       },
       "errors": {
-        "validEmail": "Invalid email address"
+        "validEmail": "Endereço de e-mail inválido"
       },
       "buttons": {
-        "submit": "Send reset instructions"
+        "submit": "Enviar instruções de recuperação"
       }
     },
     "register": {
@@ -66,42 +66,42 @@
     }
   },
   "actions": {
-    "list": "List",
-    "create": "Create",
-    "edit": "Edit",
-    "show": "Show"
+    "list": "Lista",
+    "create": "Criar",
+    "edit": "Editar",
+    "show": "Mostrar"
   },
   "buttons": {
-    "create": "Create",
-    "save": "Save",
-    "logout": "Logout",
-    "delete": "Delete",
-    "edit": "Edit",
-    "cancel": "Cancel",
-    "confirm": "Are you sure?",
-    "filter": "Filter",
-    "clear": "Clear",
-    "refresh": "Refresh",
-    "show": "Show",
+    "create": "Criar",
+    "save": "Salvar",
+    "logout": "Sair da conta",
+    "delete": "Apagar",
+    "edit": "Editar",
+    "cancel": "Cancelar",
+    "confirm": "Você tem certeza?",
+    "filter": "Filtrar",
+    "clear": "Limpar",
+    "refresh": "Atualizar",
+    "show": "Mostrar",
     "undo": "Undo",
     "import": "Import",
     "clone": "Clone",
-    "notAccessTitle": "You don't have permission to access"
+    "notAccessTitle": "Você não tem permissão para acessar."
   },
   "warnWhenUnsavedChanges": "Are you sure you want to leave? You have unsaved changes.",
   "notifications": {
-    "success": "Successful",
+    "success": "Sucesso",
     "error": "Error (status code: {{statusCode}})",
     "undoable": "You have {{seconds}} seconds to undo",
-    "createSuccess": "Successfully created {{resource}}",
+    "createSuccess": "Criado com sucesso {{resource}}",
     "createError": "There was an error creating {{resource}} (status code: {{statusCode}})",
-    "deleteSuccess": "Successfully deleted {{resource}}",
+    "deleteSuccess": "Apagado com sucesso {{resource}}",
     "deleteError": "Error when deleting {{resource}} (status code: {{statusCode}})",
-    "editSuccess": "Successfully edited {{resource}}",
+    "editSuccess": "Editado com sucesso {{resource}}",
     "editError": "Error when editing {{resource}} (status code: {{statusCode}})",
     "importProgress": "Importing: {{processed}}/{{total}}"
   },
-  "loading": "Loading",
+  "loading": "Carregando",
   "tags": {
     "clone": "Clone"
   },
@@ -109,7 +109,7 @@
     "title": "Dashboard"
   },
   "blog_posts": {
-    "blog_posts": "Blog Posts",
+    "blog_posts": "Operadores",
     "fields": {
       "id": "Id",
       "title": "Title",
