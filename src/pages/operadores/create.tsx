@@ -23,6 +23,11 @@ export const OperatorCreate: React.FC<IResourceComponentsProps> = () => {
   } = useForm({
     defaultValues: {
       avatar: "https://ui-avatars.com/api/?name=",
+      nome: "",
+      celular: "",
+      ativo: true,
+      TAG: "",
+      data_nascimento: "",
     },
   });
 
@@ -49,7 +54,10 @@ export const OperatorCreate: React.FC<IResourceComponentsProps> = () => {
           <input
             type="file"
             hidden
-            onChange={(e) => submitAvatar(e.target.files[0])}
+            onChange={(e) => {
+              if (!e.target.files || e.target.files.length === 0) return;
+              submitAvatar(e.target.files[0]);
+            }}
           />
         </Button>
         <TextField

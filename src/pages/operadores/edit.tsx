@@ -9,7 +9,7 @@ import {
 import { useForm } from "@refinedev/react-hook-form";
 import { IResourceComponentsProps } from "@refinedev/core";
 import { Controller } from "react-hook-form";
-import React, { useState } from "react";
+import React from "react";
 import { sendAvatarFile } from "../../utility";
 
 export const OperatorEdit: React.FC<IResourceComponentsProps> = () => {
@@ -45,7 +45,10 @@ export const OperatorEdit: React.FC<IResourceComponentsProps> = () => {
           <input
             type="file"
             hidden
-            onChange={(e) => submitAvatar(e.target.files[0])}
+            onChange={(e) => {
+              if (!e.target.files || e.target.files.length === 0) return;
+              submitAvatar(e.target.files[0]);
+            }}
           />
         </Button>
         <TextField
