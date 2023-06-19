@@ -12,5 +12,7 @@ root.render(
     <React.Suspense fallback="loading">
       <App />
     </React.Suspense>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
+
+export {};
