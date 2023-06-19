@@ -20,7 +20,6 @@ import {
   OperatorCreate,
   OperatorEdit,
   OperatorList,
-  BlogPostShow,
 } from "../pages/operadores";
 
 export function Router() {
@@ -49,7 +48,7 @@ export function Router() {
           <Route index element={<OperatorList />} />
           <Route path="create" element={<OperatorCreate />} />
           <Route path="edit/:id" element={<OperatorEdit />} />
-          <Route path="show/:id" element={<BlogPostShow />} />
+          {/* <Route path="show/:id" element={<BlogPostShow />} /> */}
         </Route>
         {/* <Route path="/categories">
           <Route index element={<CategoryList />} />
