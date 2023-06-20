@@ -44,7 +44,7 @@ export function Router() {
         }
       >
         <Route index element={<NavigateToResource resource="operadores" />} />
-        <Route path="/operadores">
+        <Route path="/operadores/*">
           <Route index element={<OperatorList />} />
           <Route path="create" element={<OperatorCreate />} />
           <Route path="edit/:id" element={<OperatorEdit />} />
